@@ -8,11 +8,12 @@ import com.inarstudio.personapi.enums.PhoneType;
 
 import javax.persistence.*;
 
+@Entity
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class phone {
+public class Phone {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
