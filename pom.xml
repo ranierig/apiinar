@@ -15,8 +15,31 @@
 	<description>person API project</description>
 	<properties>
 		<java.version>11</java.version>
+		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+		<mapstruct.version>1.3.1.Final</mapstruct.version>
+		<projectlombok.version>1.18.8</projectlombok.version>
 	</properties>
+
 	<dependencies>
+
+
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version> 1.18.20</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>1.4.2.Final</version>
+		</dependency>
+
+
+
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -52,6 +75,19 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-el</artifactId>
+			<version>9.0.52</version>
+		</dependency>
+		<dependency>
+			<groupId>org.xmlunit</groupId>
+			<artifactId>xmlunit-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.xmlunit</groupId>
+			<artifactId>xmlunit-core</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -60,11 +96,27 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+
+
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok-mapstruct-binding</artifactId>
+						</exclude>
+						<exclude>
+							<groupId>org.mapstruct</groupId>
+							<artifactId>mapstruct</artifactId>
+						</exclude>
+
+
 					</excludes>
 				</configuration>
 

@@ -1,4 +1,4 @@
-package com.inarstudio.personapi.dto;
+package com.inarstudio.personapi.dto.response;
 
 import lombok.Builder;
 import lombok.Data;
